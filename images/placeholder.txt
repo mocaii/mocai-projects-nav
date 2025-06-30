@@ -1,0 +1,3 @@
+这个文件夹用于存放项目图片。
+你可以将项目截图或相关图片放在这里，命名为project1.jpg、project2.jpg等。
+如果没有实际图片，可以使用在线图片服务如https://placeholder.com/或https://picsum.photos/生成占位图片。

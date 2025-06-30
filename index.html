@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mocai's Projects</title>
+    <link rel="icon" href="./images/favicon.ico"></link>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-decoration"></div>
+    <div class="floating-elements"></div>
+    <header>
+        <div class="container">
+            <h1>Mocai's Projects <span class="tech-badge">2025</span></h1>
+            <p>探索我开发的各种网站和应用程序</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="搜索项目...">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="categories">
+            <button class="category active" data-category="all"><span>全部</span></button>
+            <button class="category" data-category="web"><span>Web应用</span></button>
+            <button class="category" data-category="mobile"><span>移动应用</span></button>
+            <button class="category" data-category="tool"><span>工具类</span></button>
+            <button class="category" data-category="other"><span>其他</span></button>
+        </div>
+
+        <div class="projects-grid" id="projectsContainer"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mocai's Projects. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 更鲜明的渐变定义 -->
+    <radialGradient id="blueGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#2980b9;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:0.2"/>
+    </radialGradient>
+    
+    <radialGradient id="greenGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:0.18"/>
+    </radialGradient>
+    
+    <radialGradient id="pinkGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#e91e63;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#f06292;stop-opacity:0.15"/>
+    </radialGradient>
+    
+    <!-- 叶子形状 -->
+    <path id="leaf" d="M0,10 Q5,0 10,10 Q5,15 0,10 Z" fill="url(#greenGradient)"/>
+    
+    <!-- 花朵形状 -->
+    <g id="flower">
+      <circle cx="0" cy="0" r="2" fill="#e91e63" fill-opacity="0.3"/>
+      <circle cx="0" cy="-4" r="1.5" fill="#f06292" fill-opacity="0.25"/>
+      <circle cx="4" cy="0" r="1.5" fill="#f06292" fill-opacity="0.25"/>
+      <circle cx="0" cy="4" r="1.5" fill="#f06292" fill-opacity="0.25"/>
+      <circle cx="-4" cy="0" r="1.5" fill="#f06292" fill-opacity="0.25"/>
+    </g>
+    
+    <!-- 星形 -->
+    <path id="star" d="M0,-8 L2,-2 L8,-2 L3,1 L5,7 L0,4 L-5,7 L-3,1 L-8,-2 L-2,-2 Z" fill="#f39c12" fill-opacity="0.25"/>
+  </defs>
+  
+  <!-- 透明背景 -->
+  <rect width="300" height="300" fill="transparent"/>
+  
+  <!-- 大型装饰圆圈 -->
+  <circle cx="75" cy="75" r="45" fill="url(#blueGradient)"/>
+  <circle cx="225" cy="225" r="55" fill="url(#greenGradient)"/>
+  <circle cx="225" cy="75" r="35" fill="url(#pinkGradient)"/>
+  
+  <!-- 线条装饰 -->
+  <circle cx="150" cy="150" r="70" fill="none" stroke="#2980b9" stroke-width="2" stroke-opacity="0.3"/>
+  <circle cx="50" cy="200" r="35" fill="none" stroke="#27ae60" stroke-width="1.5" stroke-opacity="0.25"/>
+  <circle cx="250" cy="50" r="25" fill="none" stroke="#e91e63" stroke-width="1" stroke-opacity="0.2"/>
+  
+  <!-- 叶子装饰 -->
+  <g transform="translate(40,40) rotate(15)">
+    <use href="#leaf"/>
+  </g>
+  <g transform="translate(120,60) rotate(-30)">
+    <use href="#leaf"/>
+  </g>
+  <g transform="translate(200,90) rotate(45)">
+    <use href="#leaf"/>
+  </g>
+  <g transform="translate(260,40) rotate(-15)">
+    <use href="#leaf"/>
+  </g>
+  <g transform="translate(30,160) rotate(60)">
+    <use href="#leaf"/>
+  </g>
+  <g transform="translate(180,240) rotate(-45)">
+    <use href="#leaf"/>
+  </g>
+  <g transform="translate(280,180) rotate(30)">
+    <use href="#leaf"/>
+  </g>
+  
+  <!-- 花朵装饰 -->
+  <g transform="translate(60,140)">
+    <use href="#flower"/>
+  </g>
+  <g transform="translate(240,120)">
+    <use href="#flower"/>
+  </g>
+  <g transform="translate(140,260)">
+    <use href="#flower"/>
+  </g>
+  <g transform="translate(80,260)">
+    <use href="#flower"/>
+  </g>
+  <g transform="translate(200,180)">
+    <use href="#flower"/>
+  </g>
+  
+  <!-- 星形装饰 -->
+  <g transform="translate(100,50) scale(0.8)">
+    <use href="#star"/>
+  </g>
+  <g transform="translate(180,100) scale(0.6)">
+    <use href="#star"/>
+  </g>
+  <g transform="translate(50,280) scale(0.7)">
+    <use href="#star"/>
+  </g>
+  
+  <!-- 点状装饰 -->
+  <circle cx="90" cy="110" r="2" fill="#2980b9" fill-opacity="0.4"/>
+  <circle cx="210" cy="60" r="2.5" fill="#27ae60" fill-opacity="0.35"/>
+  <circle cx="45" cy="190" r="2" fill="#e91e63" fill-opacity="0.3"/>
+  <circle cx="270" cy="240" r="2.5" fill="#2980b9" fill-opacity="0.35"/>
+  <circle cx="165" cy="210" r="2" fill="#27ae60" fill-opacity="0.38"/>
+  <circle cx="190" cy="30" r="2" fill="#f39c12" fill-opacity="0.32"/>
+  <circle cx="20" cy="80" r="2.5" fill="#e91e63" fill-opacity="0.28"/>
+  <circle cx="130" cy="20" r="1.5" fill="#3498db" fill-opacity="0.3"/>
+  <circle cx="280" cy="120" r="2" fill="#2ecc71" fill-opacity="0.25"/>
+  
+  <!-- 波浪线装饰 -->
+  <path d="M0,75 Q37.5,60 75,75 T150,75 T225,75 T300,75" 
+        fill="none" stroke="#3498db" stroke-width="2" stroke-opacity="0.25"/>
+  <path d="M0,225 Q37.5,240 75,225 T150,225 T225,225 T300,225" 
+        fill="none" stroke="#27ae60" stroke-width="2" stroke-opacity="0.2"/>
+  <path d="M0,150 Q50,130 100,150 T200,150 T300,150" 
+        fill="none" stroke="#e91e63" stroke-width="1.5" stroke-opacity="0.18"/>
+  
+  <!-- 几何线条 -->
+  <line x1="0" y1="100" x2="300" y2="100" stroke="#2980b9" stroke-width="1" stroke-opacity="0.15"/>
+  <line x1="0" y1="200" x2="300" y2="200" stroke="#27ae60" stroke-width="1" stroke-opacity="0.12"/>
+  <line x1="100" y1="0" x2="100" y2="300" stroke="#e91e63" stroke-width="0.8" stroke-opacity="0.1"/>
+  <line x1="200" y1="0" x2="200" y2="300" stroke="#f39c12" stroke-width="0.8" stroke-opacity="0.08"/>
+  
+  <!-- 三角形装饰 -->
+  <polygon points="100,20 110,35 90,35" fill="#2980b9" fill-opacity="0.25"/>
+  <polygon points="250,180 260,195 240,195" fill="#27ae60" fill-opacity="0.22"/>
+  <polygon points="30,280 40,295 20,295" fill="#e91e63" fill-opacity="0.2"/>
+  <polygon points="170,280 180,295 160,295" fill="#f39c12" fill-opacity="0.18"/>
+</svg>

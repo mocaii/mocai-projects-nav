@@ -1,0 +1,95 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 渐变定义 - 增加透明度 -->
+    <radialGradient id="blueGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#5dade2;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#3498db;stop-opacity:0.12"/>
+    </radialGradient>
+    
+    <radialGradient id="greenGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:0.1"/>
+    </radialGradient>
+    
+    <!-- 叶子形状 - 增加透明度 -->
+    <path id="leaf" d="M0,8 Q4,0 8,8 Q4,12 0,8 Z" fill="url(#greenGradient)"/>
+    
+    <!-- 简化的花朵 - 增加透明度 -->
+    <g id="flower">
+      <circle cx="0" cy="0" r="1.5" fill="#e74c3c" fill-opacity="0.2"/>
+      <circle cx="0" cy="-3" r="1" fill="#e74c3c" fill-opacity="0.15"/>
+      <circle cx="3" cy="0" r="1" fill="#e74c3c" fill-opacity="0.15"/>
+      <circle cx="0" cy="3" r="1" fill="#e74c3c" fill-opacity="0.15"/>
+      <circle cx="-3" cy="0" r="1" fill="#e74c3c" fill-opacity="0.15"/>
+    </g>
+  </defs>
+  
+  <!-- 透明背景 -->
+  <rect width="300" height="300" fill="transparent"/>
+  
+  <!-- 大型装饰圆圈 - 增加透明度 -->
+  <circle cx="75" cy="75" r="40" fill="url(#blueGradient)"/>
+  <circle cx="225" cy="225" r="50" fill="url(#greenGradient)"/>
+  
+  <!-- 线条装饰 - 增加透明度 -->
+  <circle cx="150" cy="150" r="60" fill="none" stroke="#3498db" stroke-width="1" stroke-opacity="0.2"/>
+  <circle cx="50" cy="200" r="30" fill="none" stroke="#27ae60" stroke-width="1" stroke-opacity="0.18"/>
+  
+  <!-- 叶子装饰 -->
+  <g transform="translate(40,40) rotate(15)">
+    <use href="#leaf"/>
+  </g>
+  <g transform="translate(120,60) rotate(-30)">
+    <use href="#leaf"/>
+  </g>
+  <g transform="translate(200,90) rotate(45)">
+    <use href="#leaf"/>
+  </g>
+  <g transform="translate(260,40) rotate(-15)">
+    <use href="#leaf"/>
+  </g>
+  <g transform="translate(30,160) rotate(60)">
+    <use href="#leaf"/>
+  </g>
+  <g transform="translate(180,240) rotate(-45)">
+    <use href="#leaf"/>
+  </g>
+  
+  <!-- 花朵装饰 -->
+  <g transform="translate(60,140)">
+    <use href="#flower"/>
+  </g>
+  <g transform="translate(240,120)">
+    <use href="#flower"/>
+  </g>
+  <g transform="translate(140,260)">
+    <use href="#flower"/>
+  </g>
+  <g transform="translate(80,260)">
+    <use href="#flower"/>
+  </g>
+  
+  <!-- 点状装饰 - 增加透明度 -->
+  <circle cx="90" cy="110" r="1.5" fill="#3498db" fill-opacity="0.3"/>
+  <circle cx="210" cy="60" r="2" fill="#27ae60" fill-opacity="0.25"/>
+  <circle cx="45" cy="190" r="1.5" fill="#e74c3c" fill-opacity="0.2"/>
+  <circle cx="270" cy="240" r="2" fill="#3498db" fill-opacity="0.25"/>
+  <circle cx="165" cy="210" r="1.5" fill="#27ae60" fill-opacity="0.28"/>
+  <circle cx="190" cy="30" r="1.5" fill="#5dade2" fill-opacity="0.22"/>
+  <circle cx="20" cy="80" r="2" fill="#2ecc71" fill-opacity="0.2"/>
+  
+  <!-- 波浪线装饰 - 增加透明度 -->
+  <path d="M0,75 Q37.5,60 75,75 T150,75 T225,75 T300,75" 
+        fill="none" stroke="#5dade2" stroke-width="1" stroke-opacity="0.15"/>
+  <path d="M0,225 Q37.5,240 75,225 T150,225 T225,225 T300,225" 
+        fill="none" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.12"/>
+  
+  <!-- 几何线条 - 增加透明度 -->
+  <line x1="0" y1="150" x2="300" y2="150" stroke="#3498db" stroke-width="0.5" stroke-opacity="0.1"/>
+  <line x1="150" y1="0" x2="150" y2="300" stroke="#27ae60" stroke-width="0.5" stroke-opacity="0.08"/>
+  
+  <!-- 添加一些三角形装饰 -->
+  <polygon points="100,20 110,35 90,35" fill="#3498db" fill-opacity="0.15"/>
+  <polygon points="250,180 260,195 240,195" fill="#27ae60" fill-opacity="0.12"/>
+  <polygon points="30,280 40,295 20,295" fill="#e74c3c" fill-opacity="0.1"/>
+</svg>
